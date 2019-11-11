@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 body {
   font-family: "Open Sans", sans-serif;
   margin: 0;
@@ -10,6 +11,7 @@ main .hero-image {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  z-index: 0;
 }
 
 nav {
@@ -38,12 +40,13 @@ nav .menu {
 }
 
 nav .menu .logo img {
-  margin-top: 2.4px;
+  margin: 37px 0 0 175px;
   width: 100px;
 }
 
 nav .menu .button {
   width: 150px;
+  margin-right: 175px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -59,22 +62,48 @@ nav .menu .button button {
 }
 
 nav .menu .button button:first-child {
-  background: #FFFFFF62;
+  margin-top: 24px;
+  background: rgba(255, 255, 255, 0.38) 0% 0% no-repeat padding-box;
   width: 30%;
 }
 
 nav .menu .button button:last-child {
+  margin-top: 24px;
   background: #DE0E0B;
   width: 69%;
 }
 
-h1 {
-  color: #fff;
-  width: 50%;
+section .hero-inner {
+  margin: 483px 0 0 375px;
 }
 
-p {
+section .hero-inner img {
+  position: relative;
+}
+
+section .hero-inner h1 {
+  color: #fff;
+  width: 292px;
+  height: 130px;
+  font-size: 37px;
+  position: relative;
+  z-index: 1;
+}
+
+section .hero-inner p {
   color: #ADADAD;
-  font-size: 8px;
+  width: 552px;
+  height: 54px;
+  font-size: 16px;
+  position: absolute;
+  z-index: 1;
+}
+
+section button p {
+  text-align: left;
+  font-family: Extrabold 14px/26px Open Sans;
+  letter-spacing: 1.33px;
+  color: #de0e0b;
+  opacity: 1;
 }
 /*# sourceMappingURL=styles.css.map */
