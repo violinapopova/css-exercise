@@ -69,19 +69,19 @@ nav .menu .button button:first-child {
 
 nav .menu .button button:last-child {
   margin-top: 24px;
-  background: #DE0E0B;
+  background: #de0e0b;
   width: 69%;
 }
 
-section .hero-inner {
+.hero-inner {
   margin: 483px 0 0 375px;
 }
 
-section .hero-inner img {
+.hero-inner img {
   position: relative;
 }
 
-section .hero-inner h1 {
+.hero-inner h2 {
   color: #fff;
   width: 292px;
   height: 130px;
@@ -90,18 +90,20 @@ section .hero-inner h1 {
   z-index: 1;
 }
 
-section .hero-inner p {
-  color: #ADADAD;
+.hero-inner h5 {
+  color: #adadad;
   width: 552px;
   height: 54px;
   font-size: 16px;
+  font-weight: lighter;
   position: absolute;
   z-index: 1;
 }
 
-section button p {
+.order h6 {
   text-align: left;
   font-family: Extrabold 14px/26px Open Sans;
+  text-transform: uppercase;
   letter-spacing: 1.33px;
   color: #de0e0b;
   opacity: 1;
