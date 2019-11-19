@@ -1,7 +1,24 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display&display=swap");
 body {
   font-family: "Open Sans", sans-serif;
   margin: 0;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #adadad;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333333;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #de0e0b;
 }
 
 main .hero-image {
@@ -107,5 +124,138 @@ nav .menu .button button:last-child {
   letter-spacing: 1.33px;
   color: #de0e0b;
   opacity: 1;
+}
+
+#About,
+#Interior {
+  padding: 50px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+#About .images,
+#Interior .images {
+  margin-bottom: 50px;
+  position: relative;
+}
+
+#About .images .car,
+#Interior .images .car {
+  width: 80%;
+  position: relative;
+  z-index: 2;
+  margin-left: 10%;
+}
+
+#About .images .stripes,
+#Interior .images .stripes {
+  width: 45%;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  bottom: -100px;
+}
+
+#About .content,
+#Interior .content {
+  margin-bottom: 50px;
+}
+
+#About .content .smallHeading,
+#Interior .content .smallHeading {
+  color: #de0e0b;
+  font-family: "Playfair Display", serif;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0 0 20px 0;
+  text-transform: uppercase;
+}
+
+#About .content .divider,
+#Interior .content .divider {
+  width: 50px;
+  height: 2px;
+  background-color: #de0e0b;
+  margin: 0 0 20px 0;
+}
+
+#About .content .title,
+#Interior .content .title {
+  font-size: 32px;
+  margin: 0 0 20px 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+#About .content .desc,
+#Interior .content .desc {
+  font-size: 14px;
+  line-height: 30px;
+  font-family: "Playfair Display", serif;
+  color: gray;
+  margin: 0;
+}
+
+.pre-order-container {
+  background: #de0e0b;
+  height: 100px;
+}
+
+.pre-order-container .order-light {
+  position: relative;
+  top: 38px;
+  left: 2em;
+  border: none;
+  height: 36px;
+  width: 135px;
+  text-transform: uppercase;
+  background-color: white;
+  font-weight: bold;
+  color: #333333;
+  letter-spacing: 1.33px;
+  font-size: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  #About,
+  #Interior {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  #About .images,
+  #About .content,
+  #Interior .images,
+  #Interior .content {
+    width: 48%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #About,
+  #Interior {
+    padding: 110px 0;
+    width: 1024px;
+    margin-left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #About .images,
+  #About .content,
+  #Interior .images,
+  #Interior .content {
+    width: 45%;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

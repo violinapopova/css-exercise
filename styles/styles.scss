@@ -1,8 +1,25 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display&display=swap");
 
 body {
   font-family: "Open Sans", sans-serif;
   margin: 0;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #adadad;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333333;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #de0e0b;
 }
 
 main {
@@ -98,21 +115,22 @@ nav {
   }
 }
 
-#About{
+#About,
+#Interior {
   padding: 50px 30px;
   display: flex;
   flex-direction: column-reverse;
-  
-  .images{
+
+  .images {
     margin-bottom: 50px;
     position: relative;
-    .car{
+    .car {
       width: 80%;
       position: relative;
       z-index: 2;
       margin-left: 10%;
     }
-    .stripes{
+    .stripes {
       width: 45%;
       position: absolute;
       z-index: 1;
@@ -121,33 +139,33 @@ nav {
     }
   }
 
-  .content{
+  .content {
     margin-bottom: 50px;
-    .smallHeading{
+    .smallHeading {
       color: #de0e0b;
-      font-family: $playFair;
+      font-family: "Playfair Display", serif;
       font-size: 14px;
       font-weight: bold;
       margin: 0 0 20px 0;
       text-transform: uppercase;
     }
-    .divider{
+    .divider {
       width: 50px;
       height: 2px;
       background-color: #de0e0b;
       margin: 0 0 20px 0;
     }
-    .title{
+    .title {
       font-size: 32px;
       margin: 0 0 20px 0;
-      font-family: $openSans;
+      font-family: "Open Sans", sans-serif;
     }
-    .desc{
+    .desc {
       font-size: 14px;
-    line-height: 30px;
-    font-family: $playFair;
-    color: gray;
-    margin: 0;
+      line-height: 30px;
+      font-family: "Playfair Display", serif;
+      color: gray;
+      margin: 0;
     }
   }
 }
@@ -167,29 +185,32 @@ nav {
     font-weight: bold;
     color: #333333;
     letter-spacing: 1.33px;
-    font-size: 10px; 
+    font-size: 10px;
   }
 }
 
-
-@media screen and (min-width:768px){
-  #About{
+@media screen and (min-width: 768px) {
+  #About, 
+  #Interior {
     flex-direction: row;
-    .images, .content{
+    .images,
+    .content {
       width: 48%;
     }
   }
 }
 
-@media screen and (min-width:1024px){
-  #About{
+@media screen and (min-width: 1024px) {
+  #About, 
+  #Interior {
     padding: 110px 0;
     width: 1024px;
     margin-left: 50%;
     transform: translateX(-50%);
     justify-content: space-between;
     align-items: center;
-    .images, .content{
+    .images,
+    .content {
       width: 45%;
     }
   }
