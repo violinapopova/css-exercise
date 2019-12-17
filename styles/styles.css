@@ -21,7 +21,7 @@ body {
   background: #de0e0b;
 }
 
-main .hero-image {
+.hero-image {
   width: 100vw;
   height: 100vh;
   background: url(../content/component.png);
@@ -63,7 +63,6 @@ nav .menu .logo img {
 
 nav .menu .button {
   width: 150px;
-  margin-right: 175px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -86,7 +85,7 @@ nav .menu .button button:first-child {
 
 nav .menu .button button:last-child {
   margin-top: 24px;
-  background: #de0e0b;
+  background: #DE0E0B;
   width: 69%;
 }
 
@@ -126,8 +125,7 @@ nav .menu .button button:last-child {
   opacity: 1;
 }
 
-#About,
-#Interior {
+#About {
   padding: 50px 30px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -138,22 +136,19 @@ nav .menu .button button:last-child {
           flex-direction: column-reverse;
 }
 
-#About .images,
-#Interior .images {
+#About .images {
   margin-bottom: 50px;
   position: relative;
 }
 
-#About .images .car,
-#Interior .images .car {
+#About .images .car {
   width: 80%;
   position: relative;
   z-index: 2;
   margin-left: 10%;
 }
 
-#About .images .stripes,
-#Interior .images .stripes {
+#About .images .stripes {
   width: 45%;
   position: absolute;
   z-index: 1;
@@ -161,48 +156,81 @@ nav .menu .button button:last-child {
   bottom: -100px;
 }
 
-#About .content,
-#Interior .content {
+#About .content {
   margin-bottom: 50px;
 }
 
-#About .content .smallHeading,
-#Interior .content .smallHeading {
+#About .content .smallHeading {
   color: #de0e0b;
-  font-family: "Playfair Display", serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: bold;
   margin: 0 0 20px 0;
   text-transform: uppercase;
 }
 
-#About .content .divider,
-#Interior .content .divider {
+#About .content .divider {
   width: 50px;
   height: 2px;
   background-color: #de0e0b;
   margin: 0 0 20px 0;
 }
 
-#About .content .title,
-#Interior .content .title {
+#About .content .title {
   font-size: 32px;
   margin: 0 0 20px 0;
   font-family: "Open Sans", sans-serif;
 }
 
-#About .content .desc,
-#Interior .content .desc {
+#About .content .desc {
   font-size: 14px;
   line-height: 30px;
-  font-family: "Playfair Display", serif;
+  font-family: "Open Sans", sans-serif;
   color: gray;
   margin: 0;
 }
 
+#Interior .smallHeading {
+  color: #de0e0b;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0 0 20px 0;
+  text-transform: uppercase;
+}
+
+#Interior .divider {
+  width: 50px;
+  height: 2px;
+  background-color: #de0e0b;
+  margin: 0 0 20px 0;
+}
+
+#Interior .title {
+  font-size: 32px;
+  margin: 0 0 20px 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+#Interior .desc {
+  font-size: 14px;
+  line-height: 30px;
+  font-family: "Open Sans", sans-serif;
+  color: gray;
+  margin: 0;
+}
+
+#Interior .wheel {
+  height: 80vh;
+  margin-left: 45vw;
+  margin-top: -27vw;
+}
+
 .pre-order-container {
   background: #de0e0b;
-  height: 100px;
+  height: 107px;
+  z-index: 3;
+  margin-top: -7em;
 }
 
 .pre-order-container .order-light {
@@ -220,6 +248,187 @@ nav .menu .button button:last-child {
   font-size: 10px;
 }
 
+.black-container {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+  width: 100vw;
+  background: #0D0D0D;
+  height: 300px;
+  margin-left: -16em;
+  z-index: 20;
+}
+
+#interior-preview .btn-container {
+  width: 100%;
+  background-color: #DE0E0B;
+  padding: 15px 0;
+  margin: 10px 0 5px;
+  text-align: center;
+}
+
+#interior-preview .btn-container .preorder-btn {
+  font-family: 'Open Sans, Extrabold';
+  text-transform: uppercase;
+  background-color: #fff;
+  color: #333;
+  padding: 10px 15px;
+  border: none;
+  font-size: 12px;
+}
+
+#Powertrain .img-container {
+  width: 45vw;
+}
+
+#Powertrain .img-container #background-engine {
+  width: 40vw;
+  opacity: 0.5;
+  margin-left: -7vw;
+  position: absolute;
+  margin-top: -8vw;
+}
+
+#Powertrain .img-container #horizontal-stripes {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  margin: 2vw 0 0 8vw;
+  z-index: 2;
+}
+
+#Powertrain .img-container #engine {
+  position: absolute;
+  height: 20vw;
+  z-index: 3;
+  margin: 2vw 0 0 -8vw;
+}
+
+#Powertrain .content {
+  position: absolute;
+  width: 40vw;
+  margin-left: 50vw;
+  margin-top: -40vw;
+}
+
+#Powertrain .content .smallHeading {
+  color: #de0e0b;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0 0 20px 0;
+  text-transform: uppercase;
+}
+
+#Powertrain .content .divider {
+  width: 50px;
+  height: 2px;
+  background-color: #de0e0b;
+  margin: 0 0 20px 0;
+}
+
+#Powertrain .content .title {
+  font-size: 32px;
+  margin: 0 0 20px 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+#Powertrain .content .desc {
+  font-size: 14px;
+  line-height: 30px;
+  font-family: "Open Sans", sans-serif;
+  color: gray;
+  margin: 0;
+}
+
+#Powertrain .content .list-features {
+  list-style: none;
+  padding-left: 0;
+  margin: 35px 0 20px;
+}
+
+#Powertrain .content .list-features .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+#Powertrain .content .list-features .item .item-line {
+  display: inline-block;
+  margin-right: 15px;
+  width: 25px;
+  height: 3px;
+  background-color: #DE0E0B;
+}
+
+#Powertrain .content .list-features .item .text-in-grey {
+  color: #747474;
+}
+
+#Powertrain .content .list-features .item .text-in-bold {
+  color: #DE0E0B;
+  font-family: 'Open Sans, Bold';
+}
+
+/* #coupe,
+#powertrain {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#coupe,
+#interior-preview,
+#powertrain {
+    .img-container {
+        text-align: center;
+
+        #car,
+        #car-interior {
+            width: 350px;
+        }
+
+        #stripes {
+            display: none;
+        }
+    }
+
+    .content {
+        margin-top: 15px;
+        padding: 0 25px 10px;
+
+        .section-heading {
+            color: #DE0E0B;
+            font-family: 'Open Sans, Extrabold';
+            font-size: 14px;
+        }
+
+        .divider {
+            width: 50px;
+            height: 1px;
+            background-color: #DE0E0B;
+            margin-bottom: 15px;
+        }
+
+        .title {
+            font-size: 19px;
+            color: #000000;
+            font-family: 'Playfair Display';
+            margin-bottom: 15px;
+        }
+
+        .desc {
+            font-size: 12px;
+            font-family: 'Open Sans, Regular';
+            color: #747474;
+            line-height: 2;
+            margin-bottom: 20px;
+        }
+    }
+}
+ */
 @media screen and (min-width: 768px) {
   #About,
   #Interior {

@@ -22,16 +22,14 @@ body {
   background: #de0e0b;
 }
 
-main {
-  .hero-image {
-    width: 100vw;
-    height: 100vh;
-    background: url(../content/component.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    z-index: 0;
-  }
+.hero-image {
+  width: 100vw;
+  height: 100vh;
+  background: url(../content/component.png), ;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 0;
 }
 
 nav {
@@ -57,7 +55,6 @@ nav {
     }
     .button {
       width: 150px;
-      margin-right: 175px;
       display: flex;
       button {
         border: none;
@@ -68,19 +65,19 @@ nav {
         font-size: 10px;
         &:first-child {
           margin-top: 24px;
-          background: rgba(255, 255, 255, 0.38) 0% 0% no-repeat padding-box;
+          background: rgba(255, 255, 255, 0.38) 0% 0% no-repeat padding-box;;
           width: 30%;
         }
         &:last-child {
           margin-top: 24px;
-          background: #de0e0b;
+          background: #DE0E0B;
           width: 69%;
+          
         }
       }
     }
   }
 }
-
 .hero-inner {
   margin: 483px 0 0 375px;
   img {
@@ -115,8 +112,7 @@ nav {
   }
 }
 
-#About,
-#Interior {
+#About {
   padding: 50px 30px;
   display: flex;
   flex-direction: column-reverse;
@@ -143,7 +139,7 @@ nav {
     margin-bottom: 50px;
     .smallHeading {
       color: #de0e0b;
-      font-family: "Playfair Display", serif;
+      font-family: "Open Sans", sans-serif;
       font-size: 14px;
       font-weight: bold;
       margin: 0 0 20px 0;
@@ -163,16 +159,52 @@ nav {
     .desc {
       font-size: 14px;
       line-height: 30px;
-      font-family: "Playfair Display", serif;
+      font-family: "Open Sans", sans-serif;
       color: gray;
       margin: 0;
     }
   }
 }
 
+#Interior {
+  .smallHeading {
+    color: #de0e0b;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0 0 20px 0;
+    text-transform: uppercase;
+  }
+  .divider {
+    width: 50px;
+    height: 2px;
+    background-color: #de0e0b;
+    margin: 0 0 20px 0;
+  }
+  .title {
+    font-size: 32px;
+    margin: 0 0 20px 0;
+    font-family: "Open Sans", sans-serif;
+  }
+  .desc {
+    font-size: 14px;
+    line-height: 30px;
+    font-family: "Open Sans", sans-serif;
+    color: gray;
+    margin: 0;
+  }
+  .wheel {
+    height: 80vh;
+    margin-left: 45vw;
+    margin-top: -27vw;
+  }
+
+}
 .pre-order-container {
   background: #de0e0b;
-  height: 100px;
+  height: 107px;
+  z-index: 3;
+  margin-top: -7em;
   .order-light {
     position: relative;
     top: 38px;
@@ -188,9 +220,181 @@ nav {
     font-size: 10px;
   }
 }
+.black-container {
+  transform: translateY(-10px);
+  width: 100vw;
+  background: #0D0D0D;
+  height: 300px;
+  margin-left: -16em;
+  z-index: 20;
+}
+#interior-preview {
+  .btn-container {
+      width: 100%;
+      background-color: #DE0E0B;
+      padding: 15px 0;
+      margin: 10px 0 5px;
+      text-align: center;
+
+      .preorder-btn {
+          font-family: 'Open Sans, Extrabold';
+          text-transform: uppercase;
+          background-color: #fff;
+          color: #333;
+          padding: 10px 15px;
+          border: none;
+          font-size: 12px;
+      }
+  }
+  
+}
+#Powertrain {
+  .img-container {
+    width: 45vw;
+    #background-engine {
+      width: 40vw;
+      opacity: 0.5;
+      margin-left: -7vw;
+      position: absolute;
+      margin-top: -8vw;
+    }
+    #horizontal-stripes {
+      transform: rotate(90deg);
+      margin: 2vw 0 0 8vw;
+      z-index: 2;
+    }
+    #engine {
+      position: absolute;
+      height: 20vw;
+      z-index: 3;
+      margin: 2vw 0 0 -8vw;
+    }
+  }
+
+  .content{
+    position: absolute;
+    width: 40vw;
+    margin-left: 50vw;
+    margin-top: -40vw;
+  
+    .smallHeading {
+      color: #de0e0b;
+      font-family: "Open Sans", sans-serif;
+      font-size: 14px;
+      font-weight: bold;
+      margin: 0 0 20px 0;
+      text-transform: uppercase;
+    }
+    .divider {
+      width: 50px;
+      height: 2px;
+      background-color: #de0e0b;
+      margin: 0 0 20px 0;
+    }
+    .title {
+      font-size: 32px;
+      margin: 0 0 20px 0;
+      font-family: "Open Sans", sans-serif;
+    }
+    .desc {
+      font-size: 14px;
+      line-height: 30px;
+      font-family: "Open Sans", sans-serif;
+      color: gray;
+      margin: 0;
+    }
+      .list-features {
+          list-style: none;
+          padding-left: 0;
+          margin: 35px 0 20px;
+
+          .item {
+              display: flex;
+              align-items: center;
+              font-size: 12px;
+              margin-bottom: 10px;
+
+              .item-line {
+                  display: inline-block;
+                  margin-right: 15px;
+                  width: 25px;
+                  height: 3px;
+                  background-color: #DE0E0B;
+              }
+
+              .text-in-grey {
+                  color: #747474;
+              }
+
+              .text-in-bold {
+                  color: #DE0E0B;
+                  font-family: 'Open Sans, Bold';
+              }
+          }
+      }
+  }
+}
+/* #coupe,
+#powertrain {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#coupe,
+#interior-preview,
+#powertrain {
+    .img-container {
+        text-align: center;
+
+        #car,
+        #car-interior {
+            width: 350px;
+        }
+
+        #stripes {
+            display: none;
+        }
+    }
+
+    .content {
+        margin-top: 15px;
+        padding: 0 25px 10px;
+
+        .section-heading {
+            color: #DE0E0B;
+            font-family: 'Open Sans, Extrabold';
+            font-size: 14px;
+        }
+
+        .divider {
+            width: 50px;
+            height: 1px;
+            background-color: #DE0E0B;
+            margin-bottom: 15px;
+        }
+
+        .title {
+            font-size: 19px;
+            color: #000000;
+            font-family: 'Playfair Display';
+            margin-bottom: 15px;
+        }
+
+        .desc {
+            font-size: 12px;
+            font-family: 'Open Sans, Regular';
+            color: #747474;
+            line-height: 2;
+            margin-bottom: 20px;
+        }
+    }
+}
+ */
+
+
 
 @media screen and (min-width: 768px) {
-  #About, 
+  #About,
   #Interior {
     flex-direction: row;
     .images,
@@ -201,7 +405,7 @@ nav {
 }
 
 @media screen and (min-width: 1024px) {
-  #About, 
+  #About,
   #Interior {
     padding: 110px 0;
     width: 1024px;
