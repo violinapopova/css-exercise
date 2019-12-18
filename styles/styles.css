@@ -19,6 +19,7 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #de0e0b;
+  cursor: pointer;
 }
 
 .hero-image {
@@ -29,6 +30,52 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   z-index: 0;
+}
+
+.hero-inner {
+  position: absolute;
+  bottom: 20%;
+  left: 20%;
+}
+
+.hero-inner img {
+  position: relative;
+}
+
+.hero-inner h2 {
+  color: #fff;
+  width: 292px;
+  font-size: 37px;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-inner h5 {
+  color: #adadad;
+  width: 552px;
+  height: 54px;
+  font-size: 16px;
+  font-weight: lighter;
+  z-index: 1;
+}
+
+.order {
+  display: block;
+}
+
+.order h6 {
+  text-align: left;
+  font-family: Extrabold 14px/26px Open Sans;
+  text-transform: uppercase;
+  letter-spacing: 1.33px;
+  color: #de0e0b;
+  opacity: 1;
+}
+
+.order .line {
+  width: 73px;
+  color: red;
+  height: 2px;
 }
 
 nav {
@@ -62,10 +109,12 @@ nav .menu .logo img {
 }
 
 nav .menu .button {
-  width: 150px;
+  width: 195px;
+  height: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-right: 6em;
 }
 
 nav .menu .button button {
@@ -87,42 +136,6 @@ nav .menu .button button:last-child {
   margin-top: 24px;
   background: #DE0E0B;
   width: 69%;
-}
-
-.hero-inner {
-  margin: 483px 0 0 375px;
-}
-
-.hero-inner img {
-  position: relative;
-}
-
-.hero-inner h2 {
-  color: #fff;
-  width: 292px;
-  height: 130px;
-  font-size: 37px;
-  position: relative;
-  z-index: 1;
-}
-
-.hero-inner h5 {
-  color: #adadad;
-  width: 552px;
-  height: 54px;
-  font-size: 16px;
-  font-weight: lighter;
-  position: absolute;
-  z-index: 1;
-}
-
-.order h6 {
-  text-align: left;
-  font-family: Extrabold 14px/26px Open Sans;
-  text-transform: uppercase;
-  letter-spacing: 1.33px;
-  color: #de0e0b;
-  opacity: 1;
 }
 
 #About {
@@ -373,62 +386,79 @@ nav .menu .button button:last-child {
   font-family: 'Open Sans, Bold';
 }
 
-/* #coupe,
-#powertrain {
-    display: flex;
-    flex-direction: column-reverse;
+#Footer .contact-container {
+  height: 80vh;
+  width: 100vw;
+  background: #faf6f5;
+  position: relative;
 }
 
-#coupe,
-#interior-preview,
-#powertrain {
-    .img-container {
-        text-align: center;
-
-        #car,
-        #car-interior {
-            width: 350px;
-        }
-
-        #stripes {
-            display: none;
-        }
-    }
-
-    .content {
-        margin-top: 15px;
-        padding: 0 25px 10px;
-
-        .section-heading {
-            color: #DE0E0B;
-            font-family: 'Open Sans, Extrabold';
-            font-size: 14px;
-        }
-
-        .divider {
-            width: 50px;
-            height: 1px;
-            background-color: #DE0E0B;
-            margin-bottom: 15px;
-        }
-
-        .title {
-            font-size: 19px;
-            color: #000000;
-            font-family: 'Playfair Display';
-            margin-bottom: 15px;
-        }
-
-        .desc {
-            font-size: 12px;
-            font-family: 'Open Sans, Regular';
-            color: #747474;
-            line-height: 2;
-            margin-bottom: 20px;
-        }
-    }
+#Footer .pre-order-information {
+  position: absolute;
+  left: 15%;
+  top: 25%;
 }
- */
+
+#Footer .pre-order-information #logo {
+  width: 110px;
+}
+
+#Footer .pre-order-information p {
+  color: #656565;
+  width: 300px;
+  font-size: 12px;
+  margin-bottom: 10%;
+  font-weight: bold;
+  letter-spacing: 0;
+}
+
+#Footer .pre-order-information .pre-order-button-footer {
+  width: 200px;
+  height: 53px;
+  background: #DE0E0B 0% 0% no-repeat padding-box;
+  border: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#Footer #footer-image {
+  height: 80vh;
+  position: absolute;
+  left: 60%;
+  bottom: 0;
+  background-color: #faf6f5;
+  background: -webkit-gradient(linear, left top, right top, from(#faf6f5));
+  background: linear-gradient(90deg, #faf6f5);
+}
+
+#Footer .social-media-part {
+  width: 100vw;
+  height: 15vh;
+  left: 12%;
+  margin-top: 2%;
+  position: absolute;
+}
+
+#Footer .social-media-part .social-media-icons {
+  list-style-type: none;
+}
+
+#Footer .social-media-part .social-media-icons li {
+  display: inline-block;
+  left: 10%;
+}
+
+#Footer .social-media-part .social-media-icons li a {
+  margin-right: 50px;
+}
+
+#Footer .social-media-part .copyright {
+  color: #ADADAD;
+  font-size: 12px;
+  margin-left: 2.5%;
+}
+
 @media screen and (min-width: 768px) {
   #About,
   #Interior {
