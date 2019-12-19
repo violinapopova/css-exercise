@@ -134,7 +134,7 @@ nav .menu .button button:first-child {
 
 nav .menu .button button:last-child {
   margin-top: 24px;
-  background: #DE0E0B;
+  background: #de0e0b;
   width: 69%;
 }
 
@@ -265,7 +265,7 @@ nav .menu .button button:last-child {
   -webkit-transform: translateY(-10px);
           transform: translateY(-10px);
   width: 100vw;
-  background: #0D0D0D;
+  background: #0d0d0d;
   height: 300px;
   margin-left: -16em;
   z-index: 20;
@@ -273,14 +273,14 @@ nav .menu .button button:last-child {
 
 #interior-preview .btn-container {
   width: 100%;
-  background-color: #DE0E0B;
+  background-color: #de0e0b;
   padding: 15px 0;
   margin: 10px 0 5px;
   text-align: center;
 }
 
 #interior-preview .btn-container .preorder-btn {
-  font-family: 'Open Sans, Extrabold';
+  font-family: "Open Sans, Extrabold";
   text-transform: uppercase;
   background-color: #fff;
   color: #333;
@@ -374,7 +374,7 @@ nav .menu .button button:last-child {
   margin-right: 15px;
   width: 25px;
   height: 3px;
-  background-color: #DE0E0B;
+  background-color: #de0e0b;
 }
 
 #Powertrain .content .list-features .item .text-in-grey {
@@ -382,8 +382,8 @@ nav .menu .button button:last-child {
 }
 
 #Powertrain .content .list-features .item .text-in-bold {
-  color: #DE0E0B;
-  font-family: 'Open Sans, Bold';
+  color: #de0e0b;
+  font-family: "Open Sans, Bold";
 }
 
 #Footer .contact-container {
@@ -415,7 +415,7 @@ nav .menu .button button:last-child {
 #Footer .pre-order-information .pre-order-button-footer {
   width: 200px;
   height: 53px;
-  background: #DE0E0B 0% 0% no-repeat padding-box;
+  background: #de0e0b 0% 0% no-repeat padding-box;
   border: none;
   color: #fff;
   text-transform: uppercase;
@@ -428,8 +428,8 @@ nav .menu .button button:last-child {
   left: 60%;
   bottom: 0;
   background-color: #faf6f5;
-  background: -webkit-gradient(linear, left top, right top, from(#faf6f5));
-  background: linear-gradient(90deg, #faf6f5);
+  background: -webkit-gradient(linear, left top, right top, from(#faf6f5), to(#faf6f5));
+  background: linear-gradient(90deg, #faf6f5, #faf6f5);
 }
 
 #Footer .social-media-part {
@@ -454,9 +454,61 @@ nav .menu .button button:last-child {
 }
 
 #Footer .social-media-part .copyright {
-  color: #ADADAD;
+  color: #adadad;
   font-size: 12px;
   margin-left: 2.5%;
+}
+
+#Footer .contact {
+  position: absolute;
+  width: 35vw;
+  height: 65vh;
+  left: 40%;
+  background-color: #000;
+  color: white;
+  top: 30%;
+}
+
+#Footer .contact .contact-information {
+  margin: 15%;
+}
+
+#Footer .contact .contact-information .small-footer-heading {
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0 0 20px 0;
+  text-transform: uppercase;
+}
+
+#Footer .contact .contact-information .divider-footer {
+  width: 50px;
+  height: 2px;
+  background-color: #747474;
+  margin: 0 0 20px 0;
+}
+
+#Footer .contact .contact-information ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style-type: none;
+}
+
+#Footer .contact .contact-information ul .button {
+  width: 195px;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: -2.5em;
 }
 
 @media screen and (min-width: 768px) {
